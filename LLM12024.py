@@ -6,8 +6,8 @@ import os
 openai.api_key = st.secrets["openai"]["api_key"]
 
 # タイトルと説明
-st.title("GPT-3.5 Academic Paper Review")
-st.write("このアプリでは、Title、Abstract、Score、Review Questionを入力して、GPT-3.5による判定と応答を表示します。")
+st.title("LLM_GPT_Test202411")
+st.write("このアプリは、Title、Abstract、Score、Review Questionを入力して、GPTによる内容判定と応答を表示します。")
 
 # 入力欄
 title = st.text_input("Title", placeholder="Title")
@@ -81,7 +81,7 @@ if st.button("判定"):
                          f"Score: {score}\n"
                          f"この論文は、{st.session_state.button_selected}について検証しているとスコア{score}で判定されました。"
                          f"Titleとabstractの内容を参考にして論文の目的と方法について500字程度で要約し、"
-                         f"絶対に「という内容です。」で終わる改行のない文章で提示してください。")
+                         f"「という内容です。」で締めくくる改行のない文章で提示してください。")
 
         response = get_gpt_response(input_message)  # GPTに問い合わせ
         final_output = f"スコア:{score}\n理由:{response} {ending_sentence}"
