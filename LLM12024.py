@@ -7,7 +7,7 @@ openai.api_key = st.secrets["openai"]["api_key"]
 
 # タイトルと説明
 st.title("LLM_GPT_Test202411")
-st.write("このアプリは、Title、Abstract、Score、Review Questionを入力して、GPTによる内容判定と応答を表示します。")
+st.write("Title、Abstract、Score、Review Questionを入力すると、GPTが論文について説明してくれます。")
 
 # 入力欄
 title = st.text_input("Title", placeholder="Title")
