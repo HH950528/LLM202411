@@ -54,7 +54,6 @@ def get_gpt_response(user_input):
 # 判定のスコアに基づくメッセージ変化の設定
 try:
     score_float = float(score) if score else None
-    st.write(f"Score as float: {score_float}")  # デバッグ用：scoreの値を確認
     if score_float is not None:
         if score_float >= 0.76:
             ending_sentence = f"よってこの論文は{st.session_state.button_selected}について検証していると考えられます。"
