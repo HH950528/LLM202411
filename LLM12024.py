@@ -10,7 +10,7 @@ import streamlit as st
 import openai
 
 # OpenAIのAPIキー設定
-openai.api_key = "sk-Aa78E4u_yeQ6PWNzDbxPjkmLrlSrloWIEX2157i_CLT3BlbkFJEjMB0AaEXk0QH6vwwiWVSHr9QdEdwoe_6384J5mccA"
+openai.api_key = 
 
 # タイトルと説明
 st.title("GPT-3.5 Academic Paper Review")
