@@ -3,7 +3,7 @@ import openai
 import os
 
 # OpenAIのAPIキー設定
-openai.api_key = st.secrets["openai"]
+openai.api_key = st.secrets["openai"]["api_key"]
 
 # タイトルと説明
 st.title("GPT-3.5 Academic Paper Review")
