@@ -1,8 +1,9 @@
 import streamlit as st
 import openai
+import os
 
 # OpenAIのAPIキー設定
-openai_api_key = st.secrets["openai"]["api_key"] 
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # タイトルと説明
 st.title("GPT-3.5 Academic Paper Review")
